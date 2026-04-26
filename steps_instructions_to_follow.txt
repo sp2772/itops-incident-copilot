@@ -14,7 +14,7 @@ in django project settings.py
 make sure to have in settings.py (if not, update accordingly):
 
 # FASTAPI_BASE_URL = "http://localhost:8080"   # your FastAPI server
-FASTAPI_BASE_URL = "http://136.116.117.206:8080"
+FASTAPI_BASE_URL = f"http://{GCP_IP_ADDRESS}:8080"
 TEMPLATES[0]['DIRS'] = [BASE_DIR / 'templates']
 CSRF_TRUSTED_ORIGINS = [
     "https://buzz-shortcake-defy.ngrok-free.dev",
